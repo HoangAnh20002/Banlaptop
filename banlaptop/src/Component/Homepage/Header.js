@@ -3,15 +3,15 @@ import React from 'react'
 function Header() {
     return (
         <div>
-            <div className='container flex justify-between'>
-                <div className='col-lg-3 mt-6 ml-12'>
+            <div className='grid grid-cols-4 gap-8 max-[639px]:hidden'>
+                <div className='col-span-1 mt-6 ml-12'>
                     <img className='h-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
                     </img>
                 </div>
-                <div className='col-lg-3 pt-6 pl-8' style={{ width: '400px' }}>
+                <div className='col-span-1 pt-6 pl-8 w-fit'>
                     <div>
                         <input className="h-10 w-22 pl-2 border-solid border-2 rounded-full text-sm focus:outline-none focus:bg-white focus:text-gray-900"
-                            type="search" placeholder="Nhập sản phẩm cần tìm ..." style={{ width: '250px' }}></input>
+                            type="search" placeholder="Nhập sản phẩm cần tìm ..." style={{ width: '70%' }}></input>
                         <button className='h-12 w-28 border-solid border-2 bg-[#4eac4b] rounded-full  '>Tìm kiếm</button>
                     </div>
                     <div className='flex  justify-between mt-2'>
@@ -34,7 +34,7 @@ function Header() {
                     </div>
                 </div>
 
-                <div className='col-lg-3 pt-6 pl-8'>
+                <div className='col-span-1 pt-6 pl-8'>
                     <div className='text-xl text-left'>
                         Gọi ngay để nhận ưu đãi
                     </div>
@@ -44,7 +44,7 @@ function Header() {
                     </div>
                     <div className='text-2xl font-bold text-left font-mono'>0123456789</div>
                 </div>
-                <div className='col-lg-3 pt-6 pl-8'>
+                <div className='col-span-1 pt-6 pl-8 w-fit'>
                     <div className='flex bg-[#4eac4b] text-white'>
                         <a href='#'>Giới thiệu </a>|
                         <a href='#'>Khuyến mãi</a>|
@@ -62,8 +62,47 @@ function Header() {
 
                 </div>
             </div>
+            {/* responsive */}
+            <div>
+                <nav class="bg-gray-200 sm:hidden">
+                    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                        <div class="relative flex items-center justify-between h-16">
+                            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                    <span class="sr-only">Open main menu</span>
+                                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                                <img className='h-12 pl-8' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png"></img>
+
+                            </div>
+                        </div>
+                    </div>
+                    {/* <!-- Mobile menu, toggle classes based on menu state --> */}
+                    <div class="sm:hidden" id="mobile-menu">
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Trang chủ</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Laptop Acer</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Laptop HP</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Laptop Asus</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Laptop Dell</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Liên Hệ</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Khuyến mãi</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tin tức</a>
+                            <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Đăng nhập</a>
+                        </div>
+                    </div>
+                </nav>
+
+
+
+            </div>
             <div className='mt-2'>
-                <ul className='grid grid-cols-8 h-10 w-full pl-16 pr-16 text-lg bg-[#4eac4b] text-white justify-center items-center'>
+                <ul className='grid grid-cols-8 h-fit w-full pl-16 pr-16 text-lg bg-[#4eac4b] max-[639px]:hidden max-[1125px]:grid-cols-4 gap-4 text-white justify-center items-center'>
 
                     <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
                         <div><i class='fa fa-home' /></div>

@@ -51,8 +51,8 @@ function Footer() {
                     <div className='mt-8 text-start text-2xl'>
                         Fanpgage Facebook
                     </div>
-                    <div className='h-44 mt-4 grid grid-cols-4' style={{ width:"400px", backgroundImage: "url('https://cdn.tgdd.vn/hoi-dap/657586/cach-chinh-sua-loi-rat-tiec-da-xay-ra-loi-tren-fb-12-1-800x435.jpg')" }}>
-                        <div className='h-16 w-16 border bg-black border-gray-100 mt-4 ml-8  col-span-1'>
+                    <div className='h-44 mt-4 grid grid-cols-5' style={{ width:"80%", backgroundImage: "url('https://cdn.tgdd.vn/hoi-dap/657586/cach-chinh-sua-loi-rat-tiec-da-xay-ra-loi-tren-fb-12-1-800x435.jpg')" }}>
+                        <div className='h-16 w-16 border bg-black border-gray-100 mt-4 ml-8  col-span-2'>
                             <img src="https://www.facebook.com/images/fb_icon_325x325.png"></img>
                         </div>
                         <div className='col-span-3 text-start mt-8 ml-2 '>

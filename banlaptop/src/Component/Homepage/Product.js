@@ -4,13 +4,13 @@ function Product() {
     return (
         <div>
             <div>
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-7'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-7 mdres:grid-cols-5'>
                     <div className='w-40 h-10 p-2 text-white bg-[#4eac4b] col-span-1'>
                         Hàng hot mới về
                     </div>
-                    <div className='h-10 w-f bg-gray-200 border-b-2 border-b-[#4eac4b] col-span-6'></div>
+                    <div className='h-10 w-auto bg-gray-200 border-b-2 border-b-[#4eac4b] col-span-6'></div>
                 </div>
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 gap-8'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 mdres:grid-cols-3 gap-8'>
                     <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>
                             <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
@@ -114,7 +114,7 @@ function Product() {
                     </div>
                 </div>
                 {/* laptop acer */}
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-7'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-7 mdres:grid-cols-5'>
                     <div className='w-40 h-10 p-2 text-white bg-[#4eac4b] col-span-1'>
                         Laptop Acer
                     </div>
@@ -129,7 +129,7 @@ function Product() {
                         </a>
                     </div>
                 </div>
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 gap-8'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 mdres:grid-cols-3 gap-8'>
                     <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>
                             <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
@@ -233,7 +233,7 @@ function Product() {
                     </div>
                 </div>
                 {/* laptop HP */}
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-7'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-7 mdres:grid-cols-5'>
                     <div className='w-40 h-10 p-2 text-white bg-[#4eac4b] col-span-1'>
                         Laptop HP
                     </div>
@@ -248,7 +248,7 @@ function Product() {
                         </a>
                     </div>
                 </div>
-                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 gap-8'>
+                <div className='mt-4 ml-28 mr-28 grid grid-cols-5 mdres:grid-cols-3 gap-8'>
                     <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>
                             <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>

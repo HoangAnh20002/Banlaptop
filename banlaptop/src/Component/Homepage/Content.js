@@ -45,7 +45,7 @@ function Content() {
               <img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/1d869d0922c453d6ee938253dcb3a871.png" className="block w-full" />
             </SwiperSlide>
           </Swiper>
-          <ul className='flex items-center'>
+          <ul className='grid-cols-5 items-center'>
             <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
             <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
             <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
@@ -53,12 +53,12 @@ function Content() {
             <button><li className='w-32 h-12 mt-2  border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
 
           </ul>
-          <div className='w-full mt-2 h-8 bg-[#4eac4b] grid grid-cols-3 gap-4 text-lg text-white items-center '>
+          <div className='w-full mt-2 h-fit bg-[#4eac4b] grid grid-cols-3 gap-4 text-lg text-white items-center '>
             <button>Sản phẩm mới</button>
             <button>Sản phẩm khuyến mãi</button>
             <button>Sản phẩm bán chạy</button>
           </div>
-          <div className='grid grid-cols-4 gap-x-4 mt-2'>
+          <div className='grid grid-cols-4  gap-x-4 mt-2'>
             <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
               <div>
                 <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>

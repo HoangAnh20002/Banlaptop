@@ -1,18 +1,30 @@
 
 
 import './App.css';
-import Content from './Component/Homepage/Content';
-import Header from './Component/Homepage/Header';
-import Product from './Component/Homepage/Product';
-import Footer from './Component/Homepage/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeScreen from './Screen/HomeScreen';
+import LaptopAcer from './Component/Laptop/LaptopAcer';
+import LaptopAsus from './Component/Laptop/LaptopAsus';
+import LaptopDell from './Component/Laptop/LaptopDell';
+import LaptopHp from './Component/Laptop/LaptopHp';
+import Promotion from './Component/Info/Promotion';
+import Newproduct from './Component/Info/Newproduct';
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Content />
-      <Product/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'  element={<HomeScreen />} />
+        <Route path='/LaptopAcer'  element={<LaptopAcer/>} />
+        <Route path='/LaptopAsus' element={<LaptopAsus />} />
+        <Route path='/LaptopDell' element={<LaptopDell />} />
+        <Route path='/LaptopHp' element={<LaptopHp />} />
+        <Route path='/Promotion' element={<Promotion />} />
+        <Route path='/Newproduct' element={<Newproduct />} />
+
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

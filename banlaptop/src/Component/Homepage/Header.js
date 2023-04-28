@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [isShown, setIsShown] = useState(false);
@@ -6,7 +7,7 @@ function Header() {
     return (
         <div>
             <img className='w-68 h-24 hidden mx-auto max-[1023px]:block max-[639px]:hidden  ' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
-                    </img>
+            </img>
             <div className='grid grid-cols-5 mx-auto gap-8 max-[639px]:hidden'>
                 <div className='col-span-1 mt-6 ml-12 '>
                     <img className='w-full h-auto max-[1023px]:hidden  ' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
@@ -24,7 +25,7 @@ function Header() {
                             <div>Sản Phẩm Chính Hãng</div>
                         </div>
                         <div className=' w-18 col-lg-3 '>
-                            <img className='h-12 w-12 mx-auto'src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/vận-chuyển-toàn-quốc.png"></img>
+                            <img className='h-12 w-12 mx-auto' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/vận-chuyển-toàn-quốc.png"></img>
                             <div>Miễn Phí Vận Chuyển</div>
                         </div>
                         <div className=' w-18 col-lg-3 '>
@@ -106,40 +107,40 @@ function Header() {
 
             </div>
             <div className='mt-2'>
-                <ul className='grid grid-cols-8 h-fit w-full pl-16 pr-16 text-lg bg-[#4eac4b] max-[639px]:hidden max-[1125px]:grid-cols-4 gap-4 text-white justify-center items-center'>
+                <ul className='grid grid-cols-8 h-fit w-full pl-16 pr-16 text-lg bg-[#4eac4b] max-[639px]:hidden max-[1125px]:grid-cols-4 gap-4 text-white justify-center'>
 
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                    <Link to='/'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class='fa fa-home' /></div>
-                        <div className=''>Trang chủ</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Trang chủ</div>
+                    </li></Link>
+                    <Link  to='/LaptopAcer'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-laptop" /></div>
-                        <div className=''>Laptop Acer</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Laptop Acer</div>
+                    </li></Link>
+                    <Link to='/LaptopAsus'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-laptop" /></div>
-                        <div className=''>Laptop Asus</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Laptop Asus</div>
+                    </li></Link>
+                    <Link to='/LaptopDell'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-laptop" /></div>
-                        <div className=''>Laptop Dell</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Laptop Dell</div>
+                    </li></Link>
+                    <Link to='/LaptopHp'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-laptop" /></div>
-                        <div className=''>Laptop HP</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Laptop HP</div>
+                    </li></Link>
+                    <Link to='/Promotion'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-shopping-bag" /></div>
-                        <div className=''>Khuyến mãi</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Khuyến mãi</div>
+                    </li></Link>
+                    <Link to='/Newproduct'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-list-alt" /></div>
-                        <div className=''>Tin tức</div>
-                    </li>
-                    <li className='w-32 mr-4 border-r-2 border-white flex justify-around'>
+                        <div className='ml-2'>Tin tức</div>
+                    </li></Link>
+                    <Link to='#'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa-regular fa-address-book"></i></div>
-                        <div className=''>Liên hệ</div>
-                    </li>
+                        <div className='ml-2'>Liên hệ</div>
+                    </li></Link>
                 </ul>
             </div>
 

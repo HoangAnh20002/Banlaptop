@@ -1,40 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function Header() {
+    const [isShown, setIsShown] = useState(false);
+
     return (
         <div>
-            <div className='grid grid-cols-4 gap-8 max-[639px]:hidden'>
-                <div className='col-span-1 mt-6 ml-12'>
-                    <img className='h-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
+            <img className='w-68 h-24 hidden mx-auto max-[1023px]:block max-[639px]:hidden  ' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
+                    </img>
+            <div className='grid grid-cols-5 mx-auto gap-8 max-[639px]:hidden'>
+                <div className='col-span-1 mt-6 ml-12 '>
+                    <img className='w-full h-auto max-[1023px]:hidden  ' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png">
                     </img>
                 </div>
-                <div className='col-span-1 pt-6 pl-8 w-fit'>
+                <div className='col-span-2 pt-6  w-fit '>
                     <div>
                         <input className="h-10 w-22 pl-2 border-solid border-2 rounded-full text-sm focus:outline-none focus:bg-white focus:text-gray-900"
                             type="search" placeholder="Nhập sản phẩm cần tìm ..." style={{ width: '70%' }}></input>
                         <button className='h-12 w-28 border-solid border-2 bg-[#4eac4b] rounded-full  '>Tìm kiếm</button>
                     </div>
-                    <div className='flex  justify-between mt-2'>
+                    <div className='flex text-lg justify-between mt-2'>
                         <div className=' w-18 col-lg-3'>
-                            <img className='h-12 w-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/sieu-thi-dien-thoai-chinh-hang.png"></img>
+                            <img className='h-12 w-12 mx-auto' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/sieu-thi-dien-thoai-chinh-hang.png"></img>
                             <div>Sản Phẩm Chính Hãng</div>
                         </div>
-                        <div className=' w-18 col-lg-3'>
-                            <img className='h-12 w-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/vận-chuyển-toàn-quốc.png"></img>
+                        <div className=' w-18 col-lg-3 '>
+                            <img className='h-12 w-12 mx-auto'src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/vận-chuyển-toàn-quốc.png"></img>
                             <div>Miễn Phí Vận Chuyển</div>
                         </div>
-                        <div className=' w-18 col-lg-3'>
-                            <img className='h-12 w-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/s%E1%BB%ADa-ch%E1%BB%AFa.png"></img>
+                        <div className=' w-18 col-lg-3 '>
+                            <img className='h-12 w-12 mx-auto' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/s%E1%BB%ADa-ch%E1%BB%AFa.png"></img>
                             <div>Sửa Chữa Miễn Phí</div>
                         </div>
                         <div className=' w-18 col-lg-3'>
-                            <img className='h-12 w-12' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/linh-kien-chinh-hang.png"></img>
+                            <img className='h-12 w-12 mx-auto' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/linh-kien-chinh-hang.png"></img>
                             <div>Hỗ Trợ Trả Góp</div>
                         </div>
                     </div>
                 </div>
 
-                <div className='col-span-1 pt-6 pl-8'>
+                <div className='col-span-1 max-[767px]:hidden pt-6 '>
                     <div className='text-xl text-left'>
                         Gọi ngay để nhận ưu đãi
                     </div>
@@ -44,7 +48,7 @@ function Header() {
                     </div>
                     <div className='text-2xl font-bold text-left font-mono'>0123456789</div>
                 </div>
-                <div className='col-span-1 pt-6 pl-8 w-fit'>
+                <div className='col-span-1 pt-6  w-fit'>
                     <div className='flex bg-[#4eac4b] text-white'>
                         <a href='#'>Giới thiệu </a>|
                         <a href='#'>Khuyến mãi</a>|
@@ -68,7 +72,7 @@ function Header() {
                     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                         <div class="relative flex items-center justify-between h-16">
                             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                <button onClick={() => setIsShown(!isShown)} type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                                     <span class="sr-only">Open main menu</span>
                                     <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -77,13 +81,13 @@ function Header() {
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
-                                <img className='h-12 pl-8' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png"></img>
+                                <img className='h-12 ' src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/logo.png"></img>
 
                             </div>
                         </div>
                     </div>
                     {/* <!-- Mobile menu, toggle classes based on menu state --> */}
-                    <div class="sm:hidden" id="mobile-menu">
+                    <div class={`sm:hidden ${isShown ? 'block' : 'hidden'}`} id="mobile-menu">
                         <div class="px-2 pt-2 pb-3 space-y-1">
                             <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Trang chủ</a>
                             <a href="#" class="text-gray-800 hover:bg-[#4eac4b] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Laptop Acer</a>

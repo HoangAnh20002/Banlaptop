@@ -3,28 +3,28 @@ import React from 'react'
 function Footer() {
     return (
         <div>
-            <div className='grid grid-cols-5 gap-x-12 text-white bg-gray-700 mt-8 pb-8'>
-                <div className='col-span-2 mt-8'>
+            <div className='grid grid-cols-5 gap-x-12 max-[767px]:grid-cols-2 max-[639px]:grid-cols-1 text-white bg-gray-700 mt-8 pb-8'>
+                <div className='col-span-2 max-[767px]:col-span-1  mt-8 items-center'>
                     <div className='text-2xl font-bold'>
                         Apple Center Iphone Hà Nội
                     </div>
-                    <div className=' flex justify-around mt-6 ml-36 w-fit items-center'>
+                    <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>
                         <i class="fa fa-home"></i>
                         <div className='ml-2'>Cơ Sở 1: 1 Hà Nội- Hà Nội </div>
                     </div>
-                    <div className=' flex justify-around mt-6 ml-36 w-fit items-center'>
+                    <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>
                         <i class="fa fa-home"></i>
                         <div className='ml-2'>Cơ Sở 2: 2 Hà Nội- Hà Nội </div>
                     </div>
-                    <div className=' flex justify-around mt-6 ml-36 w-fit items-center'>
+                    <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>
                         <i class="fa fa-phone"></i>
                         <div className='ml-2'> Hotline:0123456789 - 123456789  Mr. Anh</div>
                     </div>
-                    <div className=' flex justify-around mt-6 ml-36 w-fit items-center'>
+                    <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>
                         <i class="fa-regular fa-envelope"></i>
                         <div className='ml-2'>Email : hoanganh@gmail.com </div>
                     </div>
-                    <div className=' flex justify-around mt-6 ml-36 w-fit items-center'>
+                    <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>
                         <i class="fa-brands fa-facebook"></i>
                         <div className='ml-2'>Facebook : fb.com/hoanganh </div>
                     </div>
@@ -47,7 +47,7 @@ function Footer() {
                         Chính sách đại lý
                     </div>
                 </div>
-                <div className='col-span-2'>
+                <div className='col-span-2 max-[767px]:ml-10'>
                     <div className='mt-8 text-start text-2xl'>
                         Fanpgage Facebook
                     </div>

@@ -12,8 +12,8 @@ function Content() {
 
 
     <div>
-      <div className='grid grid-cols-3 mt-4 gap-8 ml-32'>
-        <div className='col-span-2'>
+      <div className='grid grid-cols-3 mt-4 gap-20 mx-[7%] max-[767px]:grid-cols-1'>
+        <div className='col-span-2 '>
 
           <Swiper
             spaceBetween={30}
@@ -58,7 +58,7 @@ function Content() {
             <button>Sản phẩm khuyến mãi</button>
             <button>Sản phẩm bán chạy</button>
           </div>
-          <div className='grid grid-cols-4  gap-x-4 mt-2'>
+          <div className='grid grid-cols-4  gap-x-4 mt-2 max-[767px]:grid-cols-3 max-[639px]:grid-cols-2'>
             <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
               <div>
                 <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
@@ -106,28 +106,28 @@ function Content() {
           </div>
 
         </div>
-        <div className='col-span-1 mr-24'>
+        <div className='col-span-1 mr-16 '>
           <div>
             <div className='w-20 h-10 p-2 text-white bg-[#4eac4b]'>
               TIN TỨC
 
             </div>
-            <div className='h-1 w-f bg-[#4eac4b]'></div>
+            <div className='h-1 w-auto bg-[#4eac4b]'></div>
           </div>
           <div>
             <a href='#'><div className='grid grid-cols-4 gap-x-20 mt-2 pb-4 border-b-2 border-gray-400'>
-              <div className='col-span-1 w-24 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/photo1536787648594-15367876485951618993598-300x188.jpg"></img></div>
-              <div className='col-span-3 text-sm text-start hover:text-rose-500 '>	Giá iPhone XS và iPhone XR tại VN được tiết lộ: Thấp nhất 22 triệu, cao nhất 43 triệu, bán cuối tháng 10</div>
+              <div className='col-span-1 w-20 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/photo1536787648594-15367876485951618993598-300x188.jpg"></img></div>
+              <div className='col-span-3 text-[70%] text-start hover:text-rose-500 '>	Giá iPhone XS và iPhone XR tại VN được tiết lộ: Thấp nhất 22 triệu, cao nhất 43 triệu, bán cuối tháng 10</div>
 
             </div></a>
             <a href='#'><div className='grid grid-cols-4 gap-x-20 mt-2 pb-4 border-b-2 border-gray-400'>
-              <div className='col-span-1 w-24 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/iphone-x-plus-768x507-1.jpg"></img></div>
-              <div className='col-span-3 text-sm text-start hover:text-rose-500 '>	Cận cảnh iPhone X Plus sắp ra mắt có 3 camera sau “đẹp không thể kìm lòng”</div>
+              <div className='col-span-1 w-20 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/iphone-x-plus-768x507-1.jpg"></img></div>
+              <div className='col-span-3 text-[70%] text-start hover:text-rose-500 '>	Cận cảnh iPhone X Plus sắp ra mắt có 3 camera sau “đẹp không thể kìm lòng”</div>
 
             </div></a>
             <a href='#'><div className='grid grid-cols-4 gap-x-20 mt-2 pb-4 border-b-2 border-gray-400'>
-              <div className='col-span-1 w-24 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/photo1536787648594-15367876485951618993598-300x188.jpg"></img></div>
-              <div className='col-span-3 text-sm text-start hover:text-rose-500'>Cách khắc phục lỗi iPhone bị nóng, văng ứng dụng và tự động khóa màn hình!</div>
+              <div className='col-span-1 w-20 h-12'><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/photo1536787648594-15367876485951618993598-300x188.jpg"></img></div>
+              <div className='col-span-3 text-[70%] text-start hover:text-rose-500'>Cách khắc phục lỗi iPhone bị nóng, văng ứng dụng và tự động khóa màn hình!</div>
 
             </div></a>
           </div>

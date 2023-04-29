@@ -9,6 +9,8 @@ import LaptopDell from './Component/Laptop/LaptopDell';
 import LaptopHp from './Component/Laptop/LaptopHp';
 import Promotion from './Component/Info/Promotion';
 import Newproduct from './Component/Info/Newproduct';
+import News from './Component/Info/News';
+import Contact from './Component/Info/Contact';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         <Route path='/LaptopHp' element={<LaptopHp />} />
         <Route path='/Promotion' element={<Promotion />} />
         <Route path='/Newproduct' element={<Newproduct />} />
+        <Route path='/News' element={<News />} />
+        <Route path='/Contact' element={<Contact />} />
+
 
 
       </Routes>

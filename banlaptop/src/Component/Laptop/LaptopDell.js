@@ -25,10 +25,10 @@ function LaptopDell() {
                 <div className='mt-4 mx-20 grid grid-cols-5 max-[1200px]:grid-cols-4 max-[767px]:grid-cols-3 max-[639px]:grid-cols-2 gap-8'>
                     <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>
-                            <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
+                            <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/MSI-Modern-15-A10M-Laptop-1-510x510-1.jpg'></img>
                         </div>
                         <a href='#'><div className='mt-12 hover:text-rose-500'>
-                            Acer Swift 7 SF714-52T-7134 Laptop - Black
+                        MSI Modern 15 A10M-068VN Laptop – Space Gray
                         </div></a>
                         <div className='font-bold text-red-600 items-center mt-3'>
                             49.600.000₫

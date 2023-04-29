@@ -25,13 +25,13 @@ function LaptopAsus() {
                 <div className='mt-4 mx-20 grid grid-cols-5 max-[1200px]:grid-cols-4 max-[767px]:grid-cols-3 max-[639px]:grid-cols-2 gap-8'>
                     <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>
-                            <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
+                            <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-ROG-Strix-SCAR-III-Laptop-1-510x510-1-247x296.jpg'></img>
                         </div>
                         <a href='#'><div className='mt-12 hover:text-rose-500'>
-                            Acer Swift 7 SF714-52T-7134 Laptop - Black
+                        ASUS ROG Strix SCAR III G531GN-VAZ160T Laptop
                         </div></a>
                         <div className='font-bold text-red-600 items-center mt-3'>
-                            49.600.000₫
+                        44.600.000
                         </div>
                     </div><div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
                         <div>

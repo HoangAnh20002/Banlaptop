@@ -133,11 +133,11 @@ function Header() {
                         <div><i class="fa fa-shopping-bag" /></div>
                         <div className='ml-2'>Khuyến mãi</div>
                     </li></Link>
-                    <Link to='/Newproduct'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
+                    <Link to='/News'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa fa-list-alt" /></div>
                         <div className='ml-2'>Tin tức</div>
                     </li></Link>
-                    <Link to='#'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
+                    <Link to='/Contact'><li className='w-fit p-3 items-center border-r-2 border-white flex justify-around'>
                         <div><i class="fa-regular fa-address-book"></i></div>
                         <div className='ml-2'>Liên hệ</div>
                     </li></Link>

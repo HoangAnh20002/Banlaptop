@@ -1,13 +1,22 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import 'swiper/swiper-bundle.css';
+import  {Autoplay, Navigation, Pagination } from 'swiper/core';
+import { useState } from 'react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
+
 function Content() {
+  const [swiper, setSwiper] = useState(null);
+
+  const handleButtonClick = (index) => {
+    if (swiper) {
+      swiper.slideTo(index);
+    }
+  };
   return (
 
 
@@ -21,11 +30,12 @@ function Content() {
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
+              
             }}
-            // pagination={{
-            //     clickable: true,
-            // }}
-            // navigation={true}
+            onSwiper={setSwiper}
+            navigation
+            pagination
+  
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
@@ -46,11 +56,11 @@ function Content() {
             </SwiperSlide>
           </Swiper>
           <ul className='grid-cols-5 items-center'>
-            <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
-            <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
-            <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
-            <button><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
-            <button><li className='w-32 h-12 mt-2  border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
+            <button onClick={() => handleButtonClick(0)}><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
+            <button onClick={() => handleButtonClick(1)}><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
+            <button onClick={() => handleButtonClick(2)}><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
+            <button onClick={() => handleButtonClick(3)}><li className='w-32 h-12 mt-2 border-r-2 border-r-gray-300 border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
+            <button onClick={() => handleButtonClick(4)}><li className='w-32 h-12 mt-2  border-t-4 border-gray-100 hover:border-t-rose-500 '>Lên đời Laptop giá ưu đãi</li></button>
 
           </ul>
           <div className='w-full mt-2 h-fit bg-[#4eac4b] grid grid-cols-3 gap-4 text-lg text-white items-center '>

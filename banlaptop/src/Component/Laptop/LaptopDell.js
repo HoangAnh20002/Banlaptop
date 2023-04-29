@@ -28,7 +28,7 @@ function LaptopDell() {
                             <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/MSI-Modern-15-A10M-Laptop-1-510x510-1.jpg'></img>
                         </div>
                         <a href='#'><div className='mt-12 hover:text-rose-500'>
-                        MSI Modern 15 A10M-068VN Laptop – Space Gray
+                        MSI Modern 15 A10M-068VN Laptop - Space Gray
                         </div></a>
                         <div className='font-bold text-red-600 items-center mt-3'>
                             49.600.000₫

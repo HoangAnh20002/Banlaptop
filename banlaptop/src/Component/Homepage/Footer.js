@@ -5,7 +5,7 @@ function Footer() {
         <div>
             <div className='grid grid-cols-5 gap-x-12 max-[767px]:grid-cols-2 max-[639px]:grid-cols-1 text-white bg-gray-700 mt-8 pb-8'>
                 <div className='col-span-2 max-[767px]:col-span-1  mt-8 items-center'>
-                    <div className='text-2xl font-bold'>
+                    <div className='text-2xl font-bold ml-4'>
                         Apple Center Iphone Hà Nội
                     </div>
                     <div className=' flex justify-around mt-6 ml-20 max-[639px]:ml-2 w-fit items-center'>

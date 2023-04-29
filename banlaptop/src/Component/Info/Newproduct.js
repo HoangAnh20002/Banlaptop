@@ -44,6 +44,15 @@ function Newproduct() {
                         </div>
                     </div>
                     </Link>
+                    <Link to='#'><div className='grid grid-cols-4 max-[1260px]:grid-cols-1  mt-5 p-4 border-b-2 border-gray-400'>
+                        <div className='col-span-1  w-20 h-20 '><img src="https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-ROG-Zephyrus-M-GU502GU-1-510x510-1-150x150.jpg"></img></div>
+                        <div className='col-span-3 my-auto ml-3'>
+                            <div className='text-start  hover:text-rose-500'>ASUS ROG Zephyrus M GU502GU-AZ090T Gaming </div>
+                            <div className='text-start font-bold text-red-600'>34.600.000₫.</div>
+                        </div>
+                    </div>
+                    </Link>
+        
 
                 </div>
 

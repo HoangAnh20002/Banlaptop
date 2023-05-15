@@ -1,12 +1,14 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import  {Autoplay, Navigation, Pagination } from 'swiper/core';
+import { Autoplay, Navigation, Pagination } from 'swiper/core';
 import { useState } from 'react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 // import required modules
 
 function Content() {
@@ -17,10 +19,14 @@ function Content() {
       swiper.slideTo(index);
     }
   };
+  const sanpham = useSelector((state) => state.product)
+  const { product } = sanpham
+ 
   return (
 
 
     <div>
+
       <div className='grid grid-cols-3 mt-4 gap-20 mx-[7%] max-[767px]:grid-cols-1'>
         <div className='col-span-2 '>
 
@@ -30,12 +36,12 @@ function Content() {
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
-              
+
             }}
             onSwiper={setSwiper}
             navigation
             pagination
-  
+
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
@@ -68,51 +74,22 @@ function Content() {
             <button>Sản phẩm khuyến mãi</button>
             <button>Sản phẩm bán chạy</button>
           </div>
+
           <div className='grid grid-cols-4  gap-x-4 mt-2 max-[767px]:grid-cols-3 max-[639px]:grid-cols-2'>
-            <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
-              <div>
-                <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
+            {product.map((item) =>
+              <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
+                <div>
+                  <img src={item.img}></img>
+                </div>
+                <Link to={`ProductDetail/${item.id}`}><div className='mt-12 hover:text-rose-500'>
+                  {item.name}
+                </div></Link>
+                <div className='font-bold text-red-600 items-center mt-3'>
+                  {item.price}
+                </div>
               </div>
-              <a href='#'><div className='mt-12 hover:text-rose-500'>
-                ASUS TUF Gaming FX705DT-H7138T Gaming
-              </div></a>
-              <div className='font-bold text-red-600 items-center mt-3'>
-                42.600.000₫
-              </div>
-            </div>
-            <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
-              <div>
-                <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
-              </div>
-              <a href='#'><div className='mt-12 hover:text-rose-500'>
-                LG Gram 14ZD90N-V.AX55A5 Laptop - Silver
-              </div></a>
-              <div className='font-bold text-red-600 items-center mt-3'>
-              29.600.000₫
-              </div>
-            </div>
-            <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
-              <div>
-                <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
-              </div>
-              <a href='#'><div className='mt-12 hover:text-rose-500'>
-                ASUS ROG Zephyrus M GU502GU-AZ090T
-              </div></a>
-              <div className='font-bold text-red-600 items-center mt-3'>
-              34.600.000₫
-              </div>
-            </div>
-            <div className='bg-gray-100 h-auto w-auto p-2 shadow-xl'>
-              <div>
-                <img src='https://laptop2.webdaitin.net/wp-content/uploads/2020/08/ASUS-TUF-Gaming-FX705DT-510x510-1-247x296.jpg'></img>
-              </div>
-              <a href='#'><div className='mt-12 hover:text-rose-500'>
-                Acer Swift 7 SF714-52T-7134 Laptop - Black
-              </div></a>
-              <div className='font-bold text-red-600 items-center mt-3'>
-              49.600.000₫
-              </div>
-            </div>
+
+            )}
           </div>
 
         </div>
@@ -146,6 +123,7 @@ function Content() {
           </div>
         </div>
       </div>
+
     </div>
 
   )

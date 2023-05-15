@@ -11,6 +11,8 @@ import Promotion from './Component/Info/Promotion';
 import Newproduct from './Component/Info/Newproduct';
 import News from './Component/Info/News';
 import Contact from './Component/Info/Contact';
+import Testview from './Screen/Testview';
+import ProductDetail from './Component/Homepage/ProductDetail';
 
 function App() {
   return (
@@ -25,8 +27,9 @@ function App() {
         <Route path='/Newproduct' element={<Newproduct />} />
         <Route path='/News' element={<News />} />
         <Route path='/Contact' element={<Contact />} />
-
-
+        <Route path='/Testview' element={<Testview />} />
+        <Route path='/ProductDetail/:id' element={<ProductDetail />} />
+        
 
       </Routes>
     </BrowserRouter>

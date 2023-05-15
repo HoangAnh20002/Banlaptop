@@ -1,0 +1,23 @@
+.isures-option.active .option-child:before {
+    background: #3fb846;
+}
+
+.isures-option .option-child:before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    line-height: 13px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 8px;
+    border-radius: 99px;
+}

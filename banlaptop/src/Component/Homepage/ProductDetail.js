@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './Header'
 import { Link, useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import Count from '../../Screen/Count'
 function ProductDetail() {
   const [check, setCheck] = useState(false)
   const { id } = useParams();
@@ -33,19 +34,19 @@ function ProductDetail() {
                 <label style={{ padding: '8px 16px', borderWidth: '3px' }} className={!check ? 'border-2 border-gray-400 rounded-sm px-4 p-2 bg-yellow-200 isures-option active' : " isures-option "} onClick={handleCheckboxChange}>
                   <span className='option-child relative'>Core i5 / Ram 8GB / SSD 128GB </span>
 
-                  <div className='text-red-500 font-bold'>39.600.000 đ</div>
+                  <div className='text-red-500 font-bold'>{temptData.price}</div>
                 </label>
                 <label style={{ padding: '8px 16px', borderWidth: '3px' }} className={check ? 'border-2 border-gray-400 rounded-sm px-4 py-2 bg-yellow-200 isures-option active' : " isures-option "} onClick={handleCheckboxChange}>
                   <div>
                     <label>Core i5 / Ram 16GB / SSD 256GB </label>
-                    <div className='text-red-500 font-bold'>39.600.000 đ</div>
+                    <div className='text-red-500 font-bold'>{temptData.price}</div>
                   </div>
                 </label>
               </div>
 
             </div>
 
-            <div className='mt-5 text-sm'>
+            <div className='mt-5 text-sm mb-5'>
               <span  className={!check ? "" : "hidden"}>
                 Mainboard: HP Chipset Q87 - 4 Khe Ram
                 CPU: Intel® Xeon® Processor Core I5
@@ -62,6 +63,7 @@ function ProductDetail() {
                 Card đồ họa: NVIDIA Geforce GTX 1650 4G DDR5 128bit 896 CUDA Core</span>
             </div>
           </div>
+          <Count />
         </div>
         <div className='grid-cols-1'>
           <div className='text-2xl text-pink-500 texxt-bold'>Danh sách cửa hàng</div>

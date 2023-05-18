@@ -9,20 +9,19 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     tang: (state,action) => {
-    const {value}= action.payload
-      state.value= value
+      state.value += action.payload.value
     },
     giam: (state) => {
       state.value -= 1
     },
     incrementByAmount: (state, action) => {
-      state.value += action.payload
+      state.value = action.payload.value
     },
 
   },
 })
 
 // Action creators are generated for each case reducer function
-export const {tang, giam, incrementByAmount } = counterSlice.actions
+export const { tang, giam, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer
